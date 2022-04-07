@@ -4,12 +4,15 @@
   "description": "\"cloudBook - NoteTaking on the cloud",
   "main": "index.js",
   "scripts": {
-"serve": "nodemon server.js"
+    "serve": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
     "mongoose": "^6.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
