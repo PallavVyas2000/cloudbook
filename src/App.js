@@ -8,21 +8,24 @@ import {
 import Navbar from './components/Navbar';
 import { Home } from './components/Home';
 import About from './components/About';
+import NoteState from './context/notes/NoteState';
 
 function App() {
   return (
     <>
-      <Router>
-          <Navbar/>
+      <NoteState>
+        <Router>
+          <Navbar />
           <Routes>
             {/* Previous syntax was:-   <Route exact path"/">
               .                             <Home/>
               .                         </Route>                       This Doesn't work anymore */}
-            
-            <Route exact path="/" element = {<Home/>}/>
-            <Route exact path="/about" element = {<About/>}/>
+
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
           </Routes>
-      </Router >
+        </Router >
+      </NoteState>
     </>
   );
 }
