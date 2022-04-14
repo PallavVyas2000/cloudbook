@@ -47,6 +47,96 @@ const NoteState = (props) => {
             "tag": "testing app",
             "date": "2022-04-08T22:54:12.304Z",
             "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
+        },
+        {
+            "_id": "6250bd1482e5bffdeeeeeeewcdd12d1d",
+            "user": "6250b244ad4c5687d2a50702",
+            "title": "First Note",
+            "description": "Hey pallav",
+            "tag": "testing app",
+            "date": "2022-04-08T22:54:12.304Z",
+            "__v": 0
         }
     ]
     const [notes, setNotes] = useState(notesInitial)

@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.editico, .deleteico {
+margin:5px;
+}
+
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(180, 190, 203, 0.4);
+}
+
+.navbar-brand {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+}
+
+.navtitle {
+  font-family: "Gilbert";
+  font-size: 160%;
+  color: aliceblue;
+}
+
+.col.align-self-end{
+  padding-right: 0%;
+}
+
+strong, h5 {
+  color: cornsilk;
+}
+
+body{
+  background-image: url(back.jpg);
+  background-size: 1000px;
+}

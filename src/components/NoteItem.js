@@ -4,17 +4,19 @@ const NoteItem = (props) => {
     const { note } = props;
     return (
         <div className="col-md-3">
-            <div className="card text-dark bg-warning mb-3 my-2" style={{ width: "300px", height: "260px" }}>
+            <div className="card text-dark bg-success mb-3 my-2" style={{ width: "300px", height: "260px" }}>
                 <div className="card-header">
-                    <div class="row">
-                        <div class="col align-self-start">
+                    <div className="row">
+                        <div className="col align-self-start">
                             <strong>{note.title}</strong>
                         </div>
                         <div className="col align-self-end">
-                            <div class="row">
+                            <div className="row">
                                 <div className="d-flex flex-row-reverse">
-                                    <div class="d-inline-flex">
+                                    <div className="d-inline-flex editico">
                                         <i className="far fa-edit"></i>
+                                    </div>
+                                    <div className="d-inline-flex deleteico">
                                         <i className="far fa-trash-alt"></i>
                                     </div>
                                 </div>
