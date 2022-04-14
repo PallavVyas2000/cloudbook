@@ -1,8 +1,6 @@
-import React, { useContext, useEffect } from 'react'
-import NoteContext from '../context/notes/NoteContext'
+import React, { useEffect } from 'react'
 
 const About = () => {
-    const a = useContext(NoteContext)
     useEffect(()=>{
         // eslint-disable-next-line
     }, [])
