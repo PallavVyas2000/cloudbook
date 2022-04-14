@@ -1,7 +1,7 @@
 {
   "name": "cloudbook-backend",
   "version": "1.0.0",
-  "description": "\"cloudBook - NoteTaking on the cloud",
+  "description": "Cloudbook - NoteTaking on the cloud",
   "main": "index.js",
   "scripts": {
     "serve": "nodemon server.js"
