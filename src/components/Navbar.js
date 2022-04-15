@@ -28,10 +28,13 @@ const Navbar = () => {
                                 <Link className="nav-link" to="/about"><i className="bi bi-people-fill me-2"></i>About</Link>
                             </li>
                             <li className="nav-item rounded">
-                                <Link className="nav-link" to="#"><i className="bi bi-telephone-fill me-2"></i>Contact</Link>
+                                <Link className="nav-link" to="/signup"><i className="bi bi-person-plus-fill me-2"></i>Sign Up</Link>
+                            </li>
+                            <li className="nav-item rounded">
+                                <Link className="nav-link" to="/login"><i className="bi bi-door-open me-2"></i>Log In</Link>
                             </li>
                             <li className="nav-item dropdown rounded">
-                                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-person-fill me-2"></i>Profile</Link>
+                                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="bi bi-person-circle me-2"></i>Profile</Link>
                                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <li><Link className="dropdown-item" to="#">Account</Link></li>
                                     <li><Link className="dropdown-item" to="#">Another action</Link></li>
