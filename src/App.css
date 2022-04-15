@@ -37,8 +37,9 @@
   }
 }
 
-.editico, .deleteico {
-margin:5px;
+.editico,
+.deleteico {
+  margin: 5px;
 }
 
 .navbar-brand {
@@ -66,11 +67,16 @@ margin:5px;
   color: aliceblue;
 }
 
-.col.align-self-end{
+.col.align-self-end {
   padding-right: 0%;
 }
 
-body{
+body {
   background-image: url(back.jpg);
   background-size: 1000px;
+}
+
+.nonotes {
+  color: #22171a;
+  font-family: "Budget 2012 Regular";
 }
