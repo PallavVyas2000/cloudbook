@@ -80,3 +80,12 @@ body {
   color: #22171a;
   font-family: "Budget 2012 Regular";
 }
+
+.navbar {
+  backdrop-filter: blur(4px);
+  background: rgba(56, 185, 255, 0.348);
+}
+
+.container h1 {
+  font-family: "Budget 2012 Regular";
+}

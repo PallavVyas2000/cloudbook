@@ -17,14 +17,14 @@ router.post('/createuser', [
     // If there are errors, return Bad request and the errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({ success, errors: errors.array() });
+        return res.status(400).json({ success, error: "Invalid Details" });
     }
     // Check if a user with this email already exists
     try {
         let user = await User.findOne({ email: req.body.email });
         if (user) {
             success = false;
-            return res.status(400).json({ success, error: "Sorry a user with this email already exists." });
+            return res.status(400).json({ success, error: "A user with this email already exists." });
         }
         // Adding salt and creating hash of the password
         const salt = await bcrypt.genSalt(10);
@@ -66,7 +66,7 @@ router.post('/login', [
         let user = await User.findOne({ email });
         if (!user) {
             success = false;
-            return res.status(400).json({ success, error: "Please login using valid credentials" });
+            return res.status(400).json({ success, error: "User does not exist" });
         }
 
         const passwordCompare = await bcrypt.compare(password, user.password);

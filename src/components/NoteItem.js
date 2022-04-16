@@ -20,7 +20,7 @@ const NoteItem = (props) => {
                                         <i className="far fa-edit" onClick={() => {updateNote(note)}}></i>
                                     </div>
                                     <div className="d-inline-flex deleteico">
-                                        <i className="far fa-trash-alt" onClick={() => {deleteNote(note._id)}}></i>
+                                        <i className="far fa-trash-alt" onClick={() => {props.showAlert("Note Deleted", "success");deleteNote(note._id)}}></i>
                                     </div>
                                 </div>
                             </div>
