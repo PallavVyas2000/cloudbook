@@ -73,7 +73,7 @@
 
 body {
   background-image: url(back.jpg);
-  background-size: 1000px;
+  background-size:contain;
 }
 
 .nonotes {
@@ -83,9 +83,17 @@ body {
 
 .navbar {
   backdrop-filter: blur(4px);
-  background: rgba(56, 185, 255, 0.348);
+  background: #6f6bb736;
 }
 
 .container h1 {
   font-family: "Budget 2012 Regular";
+}
+
+.container{
+  backdrop-filter: blur(10px);
+}
+
+.card {
+  background-color: #ffb2c094;
 }

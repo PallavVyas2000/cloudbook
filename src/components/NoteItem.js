@@ -7,7 +7,7 @@ const NoteItem = (props) => {
     const { note, updateNote } = props;
     return (
         <div className="col-md-3">
-            <div className="card text-dark bg-success mb-3 my-2" style={{ width: "300px", height: "260px" }}>
+            <div className="card text-dark mb-3 my-2" style={{ width: "300px", height: "260px" }}>
                 <div className="card-header">
                     <div className="row">
                         <div className="col align-self-start">
