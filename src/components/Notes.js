@@ -9,21 +9,21 @@ const Notes = (props) => {
     const { notes, getNotes, editNote } = context;
     let navigate = useNavigate();
     useEffect(() => {
-        if(localStorage.getItem('token')){
+        if (localStorage.getItem('token')) {
             getNotes();
         }
-        else{
+        else {
             navigate("/login")
         }
     }, [])
 
-    const [note, setNote] = useState({id: "", etitle: "", edescription: "", etag: "default" })
+    const [note, setNote] = useState({ id: "", etitle: "", edescription: "", etag: "default" })
 
     const updateNote = (currentNote) => {
         ref.current.click();
         setNote({ id: currentNote._id, etitle: currentNote.title, edescription: currentNote.description, etag: currentNote.tag });
     }
-    
+
     const handleOnClick = (e) => {
         editNote(note.id, note.etitle, note.edescription, note.etag)
         refClose.current.click();
@@ -73,18 +73,20 @@ const Notes = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="row my-3">
-                <div className="heading my-3">
-                    <h1>Your Notes</h1>
+            <div className="yournotes">
+                <div className="row my-3">
+                    <div className="heading my-3">
+                        <h1>Your Notes</h1>
+                    </div>
+                    <div className="d-flex justify-content-center">
+                        <h3 className="nonotes">
+                            {notes.length === 0 && "No Notes to display."}
+                        </h3>
+                    </div>
+                    {notes.map((note) => {
+                        return <NoteItem key={note._id} updateNote={updateNote} showAlert={props.showAlert} note={note} />;
+                    })}
                 </div>
-                <div className="d-flex justify-content-center">
-                    <h3 className="nonotes">
-                        {notes.length === 0 && "No Notes to display."}
-                    </h3>
-                </div>
-                {notes.map((note) => {
-                    return <NoteItem key={note._id} updateNote={updateNote} showAlert={props.showAlert} note={note}/>;
-                })}
             </div>
         </>
     )

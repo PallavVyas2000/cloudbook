@@ -11,7 +11,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark">
+            <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
                 <div className="container-fluid">
                     <Link to="#" className="navbar-brand">
                         <img src={logo} height="40" alt="CloudBook" />
