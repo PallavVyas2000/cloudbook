@@ -54,7 +54,7 @@ const Notes = (props) => {
                             {/* text boxes in modal */}
                             <div className="mb-3">
                                 <label htmlFor="etitle" className="form-label">Title</label>
-                                <input type="text" className="form-control" minLength={3} required id="etitle" name="etitle" placeholder="Note Title" value={note.etitle} onChange={onChange} />
+                                <input type="text" className="form-control" minLength={3} required id="etitle" name="etitle" placeholder="Write what its about" value={note.etitle} onChange={onChange} />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="edescription" className="form-label">Description</label>

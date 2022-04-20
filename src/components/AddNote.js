@@ -19,16 +19,16 @@ const AddNote = (props) => {
             <div className="container my-3 Addnote">
                 <h1>Add a Note</h1>
                 <div className="mb-3">
-                    <label htmlFor="title" className="form-label">Title</label>
+                    <label htmlFor="title" className="form-label AddInput">Title</label>
                     <input type="text" className="form-control" id="title" name="title" placeholder="Note Title" value={note.title} onChange={onChange} minLength={3} required/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="description" className="form-label">Description</label>
-                    <textarea type="text" className="form-control" id="description" name="description" rows="3" value={note.description} onChange={onChange} minLength={5} required></textarea>
+                    <label htmlFor="description" className="form-label AddInput">Description</label>
+                    <textarea type="text" className="form-control" id="description" name="description" placeholder="Whats on your mind?" rows="3" value={note.description} onChange={onChange} minLength={5} required></textarea>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="tag" className="form-label">Tag</label>
-                    <textarea type="text" className="form-control" id="tag" name="tag" rows="1" value={note.tag} onChange={onChange} minLength={3} required></textarea>
+                    <label htmlFor="tag" className="form-label AddInput">Tag</label>
+                    <textarea type="text" className="form-control" id="tag" name="tag" placeholder="Categorize this note with a tag" rows="1" value={note.tag} onChange={onChange} minLength={3} required></textarea>
                 </div>
 
                 <button type="button" disabled={note.title.length < 3 || note.description.length < 5} className="btn btn-outline-light" onClick={handleOnClick}>Add Note</button>
