@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
 .App {
   text-align: center;
 }
@@ -73,7 +75,7 @@
 
 body {
   background: url(back1.png);
-  background-size:contain;
+  background-size: 100%;
 }
 
 .nonotes {
@@ -94,7 +96,7 @@ body {
   color: rgb(238, 238, 238);
 }
 
-.Addnote{
+.Addnote {
   border-radius: 20px;
   background: rgba(61, 3, 128, 0.1);
   backdrop-filter: blur(35px);
@@ -102,9 +104,10 @@ body {
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
   padding: 30px 30px 30px 30px;
   overflow: hidden;
+  color: white;
 }
 
-.yournotes{
+.yournotes {
   border-radius: 20px;
   background: rgba(154, 78, 78, 0.1);
   backdrop-filter: blur(20px);
@@ -144,4 +147,102 @@ html {
 .form-control:focus {
   color: white;
   background-color: rgba(255, 255, 255, 0.19);
+}
+
+.aboutpage {
+  size: 100%;
+}
+
+.accordion-header {
+  border-radius: 20px;
+  background: rgba(61, 3, 128, 0.1);
+  backdrop-filter: blur(35px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: rgba(153, 66, 252, 0.1);
+  backdrop-filter: blur(20px);
+  color: white;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: 0px;
+  margin: 10px;
+}
+
+.accordion-collapse {
+  color: white;
+}
+
+.accordion-button:focus {
+  color: white;
+  background-color: #9942fc8b;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+  filter: invert(1);
+}
+
+.login-box h1 {
+  text-align: center;
+}
+
+.login-box {
+  width: 25em;
+  height: 32em;
+  background: rgba(239, 218, 241, 0.438);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 3em 3em;
+  border-radius: 10%;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 1em 0;
+  font-weight: bold;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.login-box input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1.2px solid rgb(141, 14, 130);
+  background: transparent;
+  outline: none;
+  height: 2em;
+  color: rgb(141, 14, 130);
+  font-size: 16px;
+}
+
+.login-box button:hover {
+background-color : rgba(77, 0, 128, 0.609);
+border-color: rgba(101, 0, 190, 0.642);
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 0.75em;
+  line-height: 1.7em;
+  color: rgb(53, 51, 58);
+  display: flex;
+  flex-direction: vertical;
+}
+
+.login-box a:hover {
+  color: rgb(141, 14, 130);
 }

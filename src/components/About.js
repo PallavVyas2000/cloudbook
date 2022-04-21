@@ -5,13 +5,13 @@ const About = (props) => {
         // eslint-disable-next-line
     }, [])
     return (
-        <div className="container">
-      <h2 className="heading my-4" >About Us</h2>
-      <div className="accordion" id="accordionExample">
+        <div className="container aboutpage">
+      <h2 className="heading my-4" style={{color: "white"}} >About Us</h2>
+      <div className="accordion">
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button
-              className="accordion-button"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -22,11 +22,11 @@ const About = (props) => {
           </h2>
           <div
             id="collapseOne"
-            className="accordion-collapse collapse show"
+            className="accordion-collapse collapse"
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div className="accordion-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores labore corrupti autem! Veritatis omnis excepturi perferendis aspernatur iure tenetur consequatur rerum assumenda blanditiis! Non eius quod minus, nesciunt quas aliquam?
+                Access your notes from anywhere in the world, because we got it on the CLOUDS.
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const About = (props) => {
             aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
             <div className="accordion-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, obcaecati molestiae cumque libero pariatur incidunt totam eum dolor, impedit commodi quidem architecto ab accusamus officiis facilis. Soluta, tenetur. Consectetur, accusamus!
+                Free to use then, now and forever.
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ const About = (props) => {
               data-bs-target="#collapseThree"
               aria-expanded="false"
               aria-controls="collapseThree">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta id illum corporis quia cupiditate nemo eligendi velit modi voluptate officia. Natus similique repellat ullam ab iste corrupti laudantium. Eum, nulla.
+              Totally Secure
             </button>
           </h2>
           <div
@@ -70,7 +70,7 @@ const About = (props) => {
             aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
             <div className="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat accusamus quo suscipit, accusantium illo! Qui, corrupti! Repellat voluptas nostrum distinctio? Reprehenderit incidunt praesentium facere commodi eius omnis sequi consequuntur?
+              Just keep your login credentials safe, leave the rest to Us.
             </div>
           </div>
         </div>
