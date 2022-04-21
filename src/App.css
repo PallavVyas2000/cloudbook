@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;500&family=Bebas+Neue&family=Oswald:wght@500&display=swap');
 .App {
   text-align: center;
 }
@@ -37,6 +36,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffb2c0;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8465bd;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #8465bd;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffb2c0;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 .editico,
@@ -140,6 +171,10 @@ html {
   background-color: #22171a00;
 }
 
+.form-text {
+  color: #000000;
+}
+
 .form-control::placeholder {
   color: rgba(255, 255, 255, 0.584);
 }
@@ -149,8 +184,33 @@ html {
   background-color: rgba(255, 255, 255, 0.19);
 }
 
+.dropdown-menu {
+  border-radius: 20px;
+  background: rgba(154, 78, 78, 0.1);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+  padding: 10px 15px 10px 15px;
+  overflow: hidden;
+}
+
+.dropdown-item,.dropdown-divider {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  text-shadow: 0px 0px 6px #ffffff,
+              0px 0px 10px #ffffff;
+}
+
 .aboutpage {
   size: 100%;
+}
+
+.signuplink {
+  padding-right: 10px !important;
 }
 
 .accordion-header {
@@ -192,25 +252,26 @@ html {
 
 .login-box h1 {
   text-align: center;
+  font-size: 46px;
 }
 
 .login-box {
-  width: 25em;
-  height: 32em;
+  width: 50%;
   background: rgba(239, 218, 241, 0.438);
   top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 3em 3em;
-  border-radius: 10%;
+  box-sizing:content-box;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .login-box label {
   margin: 0;
-  padding: 1em 0;
-  font-weight: bold;
+  padding: 15px 0;
+  font-family: 'Bebas Neue';
+  font-size: 28px;
 }
 
 .login-box input {
@@ -219,13 +280,13 @@ html {
 }
 
 .login-box input[type="email"],
-input[type="password"] {
+input[type="password"], input[type="text"] {
   border: none;
   border-bottom: 1.2px solid rgb(141, 14, 130);
   background: transparent;
   outline: none;
   height: 2em;
-  color: rgb(141, 14, 130);
+  color: rgb(255, 255, 255);
   font-size: 16px;
 }
 
@@ -245,4 +306,8 @@ border-color: rgba(101, 0, 190, 0.642);
 
 .login-box a:hover {
   color: rgb(141, 14, 130);
+}
+
+.footer {
+  height: 60px;
 }

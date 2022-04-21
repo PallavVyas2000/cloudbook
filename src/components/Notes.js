@@ -88,6 +88,8 @@ const Notes = (props) => {
                     })}
                 </div>
             </div>
+            <div className="footer">
+            </div>
         </>
     )
 }
