@@ -54,21 +54,21 @@ const Notes = (props) => {
                             {/* text boxes in modal */}
                             <div className="mb-3">
                                 <label htmlFor="etitle" className="form-label">Title</label>
-                                <input type="text" className="form-control" minLength={3} required id="etitle" name="etitle" value={note.etitle} onChange={onChange} />
+                                <input type="textModal" className="form-control" minLength={3} required id="etitle" name="etitle" value={note.etitle} onChange={onChange} />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="edescription" className="form-label">Description</label>
-                                <textarea type="text" className="form-control" minLength={5} required id="edescription" name="edescription" rows="3" value={note.edescription} onChange={onChange}></textarea>
+                                <textarea type="textModal" className="form-control" minLength={5} required id="edescription" name="edescription" rows="3" value={note.edescription} onChange={onChange}></textarea>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="etag" className="form-label">Tag</label>
-                                <textarea type="text" className="form-control" id="etag" name="etag" value={note.etag} rows="1" onChange={onChange}></textarea>
+                                <textarea type="textModal" className="form-control" id="etag" name="etag" value={note.etag} rows="1" onChange={onChange}></textarea>
                             </div>
                             {/*  */}
                         </div>
                         <div className="modal-footer">
-                            <button type="button" ref={refClose} className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" disabled={note.etitle.length < 3 || note.edescription.length < 5} onClick={handleOnClick} className="btn btn-primary">Update Note</button>
+                            <button type="button" ref={refClose} className="btn btn-secondary modalbtnx" data-bs-dismiss="modal">Close</button>
+                            <button type="button" disabled={note.etitle.length < 3 || note.edescription.length < 5} onClick={handleOnClick} className="btn btn-primary modalbtn">Update Note</button>
                         </div>
                     </div>
                 </div>

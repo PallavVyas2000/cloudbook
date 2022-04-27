@@ -1,43 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;500&family=Bebas+Neue&family=Oswald:wght@500&display=swap');
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -179,7 +139,7 @@ html {
   color: rgba(255, 255, 255, 0.584);
 }
 
-.form-control:focus {
+.Addnote .form-control:focus {
   color: white;
   background-color: rgba(255, 255, 255, 0.19);
 }
@@ -194,15 +154,15 @@ html {
   overflow: hidden;
 }
 
-.dropdown-item,.dropdown-divider {
+.dropdown-item,
+.dropdown-divider {
   color: white;
 }
 
 .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0);
   color: white;
-  text-shadow: 0px 0px 6px #ffffff,
-              0px 0px 10px #ffffff;
+  text-shadow: 0px 0px 6px #ffffff, 0px 0px 10px #ffffff;
 }
 
 .aboutpage {
@@ -262,7 +222,7 @@ html {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  box-sizing:content-box;
+  box-sizing: content-box;
   padding: 40px;
   border-radius: 20px;
 }
@@ -270,7 +230,7 @@ html {
 .login-box label {
   margin: 0;
   padding: 15px 0;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-size: 28px;
 }
 
@@ -279,8 +239,7 @@ html {
   margin-bottom: 2em;
 }
 
-.login-box input[type="email"],
-input[type="password"], input[type="text"] {
+.login-box input {
   border: none;
   border-bottom: 1.2px solid rgb(141, 14, 130);
   background: transparent;
@@ -291,8 +250,8 @@ input[type="password"], input[type="text"] {
 }
 
 .login-box button:hover {
-background-color : rgba(77, 0, 128, 0.609);
-border-color: rgba(101, 0, 190, 0.642);
+  background-color: rgba(77, 0, 128, 0.609);
+  border-color: rgba(101, 0, 190, 0.642);
 }
 
 .login-box a {
@@ -310,4 +269,27 @@ border-color: rgba(101, 0, 190, 0.642);
 
 .footer {
   height: 60px;
+}
+
+.Addnote input {
+  color: white;
+}
+
+.modalbtn {
+  background-color: rgba(77, 0, 128, 0.609);
+  border: transparent;
+}
+
+.modalbtn:hover {
+  background-color: rgba(101, 0, 190, 0.642);
+  border: transparent;
+}
+
+.modalbtnx {
+  background-color: #d5a3ab;
+  border: transparent;
+}
+
+.modalbtnx:hover {
+  background-color: #ffb7c3;
 }
