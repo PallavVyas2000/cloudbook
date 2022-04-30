@@ -1,8 +1,14 @@
 const mongoose = require('mongoose')
-const mongoURI = "mongodb://localhost:27017/cloudbook?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false"
+const mongoURI = "mongodb+srv://pallavvyas:A8uqN03NFDP9jpL4@cloudbook.gwwjl.mongodb.net/cloudbook?retryWrites=true&w=majority"
 const connectToMongo = () => {
 mongoose.connect(mongoURI, ()=>{
-    console.log("connected to mongoose")
+    console.log("Connected to mongoose")
+},{useNewUrlParser:true},{useUnifiedTopology:true})
+mongoose.connection.on('connected', ()=>{
+    console.log("Connected to MongoDB")
+})
+mongoose.connection.on('error', (err)=>{
+    console.log('error', err)
 })
 }
 
