@@ -17,7 +17,7 @@ app.use('/api/notes', require('./routes/notes'))
 
 
 app.use(express.static(path.join(__dirname, "./client/build")));
-app.get("*", function(_, res) {
+app.get("*", (_, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"),
   function(err) {
     if(err) {
